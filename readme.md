@@ -1,10 +1,12 @@
-### C++ solver for the 2D wave equation through hetergenous media with MPI parallelization.
+
+C++ solver for the 2D wave equation through hetergenous media with MPI parallelization.
 Primary author: Nicholas Geneva (ngeneva at nd.edu)
 Co-authors: Govinda Anantha Padmanabha, Qing Lan
 
-Dependiencies:
-MPI (intel or ompi)
-Boost
+CRC Module Instructions:
+module purge
+module load mpich/3.3/intel/19.0
+module load boost/1.70/gcc/4.8.5
 
 To compile in parallel: 
 mpicxx *cpp -std=c++11 -lboost_system -lboost_filesystem  -D__MPI__
